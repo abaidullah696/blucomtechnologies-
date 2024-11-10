@@ -4,17 +4,6 @@ import "../Components.css";
 const Step1 = ({ formData, setFormData, nextStep }) => {
   const [isSelected, setIsSelected] = useState(false);
 
-  const handleCheckboxChange = (e) => {
-    const { name, selected } = e.target;
-    setFormData((prevData) => ({
-      ...prevData,
-      businessSetup: {
-        ...prevData.businessSetup,
-        [name]: selected,
-      },
-    }));
-  };
-
   const handleSelectChange = (e) => {
     const selectedOptions = Array.from(e.target.selectedOptions).map(
       (option) => option.value
@@ -31,7 +20,6 @@ const Step1 = ({ formData, setFormData, nextStep }) => {
       businessSetup: newData,
     }));
 
-    // Check if any option is selected to enable the "Next" button
     setIsSelected(selectedOptions.length > 0);
   };
 

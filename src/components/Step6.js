@@ -15,7 +15,7 @@ const Step6 = ({ formData, setFormData, prevStep, nextStep }) => {
 
   return (
     <div>
-      <h1>Step 6</h1>
+      <h1>Step 5</h1>
       <h2>The not-so-exciting stuff you need to do.</h2>
       <p>
         To ensure smooth running of daily operations and take your venture to

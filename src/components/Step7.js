@@ -15,7 +15,7 @@ const Step7 = ({ formData, setFormData, prevStep, nextStep }) => {
 
   return (
     <div>
-      <h1>Step 7</h1>
+      <h1>Step 6</h1>
       <h2>End-of-year bonanza is just around that spreadsheet...</h2>
       <p>
         It’s still a long shot... but end-of-year tasks are super important and

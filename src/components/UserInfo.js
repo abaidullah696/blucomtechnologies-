@@ -11,7 +11,6 @@ const Step8 = ({ formData, prevStep, handleFormSubmit }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // Create mailto link with the collected form data
     const mailtoLink = `mailto:abaidullah696@gmail.com?subject=Form Submission&body=First Name: ${encodeURIComponent(
       firstName
     )}%0ALast Name: ${encodeURIComponent(
@@ -24,13 +23,11 @@ const Step8 = ({ formData, prevStep, handleFormSubmit }) => {
       JSON.stringify(formData, null, 2)
     )}`;
 
-    // Redirect the user to the email client with the pre-filled email
     window.location.href = mailtoLink;
   };
 
   return (
     <div>
-      <h1>Step 8</h1>
       <h2>Your Personal Information</h2>
       <p>
         Please fill out your personal details, and we will send you the final

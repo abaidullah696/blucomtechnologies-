@@ -15,39 +15,12 @@ const Step5 = ({ formData, setFormData, nextStep, prevStep }) => {
 
   return (
     <div>
-      <h1>Step 5</h1>
+      <h1>Step 4</h1>
       <h2>Take your brand for a test drive!</h2>
       <p>
         Now that you’re pretty much set up, it’s time to get out there and make
         yourself seen. Let’s do some marketing!{" "}
       </p>
-      {/* <label>
-        <input
-          type="checkbox"
-          name="EmailMarketing"
-          checked={formData.marketingStrategy.EmailMarketing || false}
-          onChange={handleCheckboxChange}
-        />
-        Email Marketing
-      </label>
-      <label>
-        <input
-          type="checkbox"
-          name="SEO"
-          checked={formData.marketingStrategy.SEO || false}
-          onChange={handleCheckboxChange}
-        />
-        SEO Optimization
-      </label>
-      <label>
-        <input
-          type="checkbox"
-          name="SocialMediaCampaigns"
-          checked={formData.marketingStrategy.SocialMediaCampaigns || false}
-          onChange={handleCheckboxChange}
-        />
-        Social Media Campaigns
-      </label> */}
       <div className="flex">
         <div className="left">
           <label>
